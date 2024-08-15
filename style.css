@@ -1,0 +1,140 @@
+* {
+    background: #F3F5FC;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.logo {
+    padding-top: 15px;
+    margin-left: 10px;
+    width: 6%;
+}
+
+main {
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.text-area {
+    border: none;
+    block-size: 500px;
+    inline-size: 700px;
+    color: #0A3871;
+    margin: 50px 0px 50px 0px;
+    text-transform: lowercase;
+}
+
+.text-area::placeholder {
+    color: #0A3871;
+}
+
+.text-area:focus {
+    outline: none;
+}
+
+.mensaje {
+    background: white url("imagenes/Munieco.png") no-repeat center;
+    border: none;
+    border-radius: 47px;
+    color: #0A3871;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding: 20px 20px 0;
+    position: absolute;
+    height: 750px;
+    box-shadow: inset -40px 40px 79px #cfd0d6,
+        inset 40px -40px 79px #ffffff;
+}
+
+.advertencia {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.advertencia p{
+    font-size: 20px;
+}
+
+.ico-advertencia {
+    width: 16px;
+    height: 16px;
+}
+
+.mensaje:focus {
+    outline: none;
+}
+
+.botones {
+    display: flex;
+    margin-top: 18px;
+}
+
+.btn {
+    font-size: 20px;
+    padding: 0.5em 2em;
+    border: transparent;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    background: #0A3871;
+    color: white;
+    border-radius: 24px;
+    cursor: pointer;
+    height: 67px;
+    width: 300px;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, rgba(30, 144, 255, 1) 0%, rgba(0, 212, 255, 1) 100%);
+}
+
+.btn:active {
+    transform: translate(0em, 0.2em);
+}
+
+.btn-encriptar {
+    margin-right: 20px;
+}
+
+.btn-copiar {
+    --color: #0A3871;
+    font-family: inherit;
+    display: inline-block;
+    width: 6em;
+    height: 2.6em;
+    line-height: 2.5em;
+    overflow: hidden;
+    font-size: 17px;
+    z-index: 1;
+    color: var(--color);
+    border: 2px solid var(--color);
+    border-radius: 6px;
+    position: fixed;
+    cursor: pointer;
+    margin-left: 240px;
+    margin-top: 670px;
+}
+
+.btn-copiar::before {
+    position: absolute;
+    content: "";
+    background: var(--color);
+    width: 150px;
+    height: 200px;
+    z-index: -1;
+    border-radius: 50%;
+    top: 100%;
+    left: 100%;
+    transition: .3s all;
+}
+
+.btn-copiar:hover {
+    color: white;
+}
+
+.btn-copiar:hover::before {
+    top: -30px;
+    left: -30px;
+}
